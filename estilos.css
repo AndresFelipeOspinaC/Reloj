@@ -1,0 +1,151 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --Very-dark-blue: hsl(235, 16%, 14%);
+  --Very-dark-blue: hsl(234, 17%, 12%);
+  --Grayish-blue: hsl(237, 18%, 59%);
+  --Soft-red: hsl(345, 95%, 68%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.start {
+  position: absolute;
+}
+
+.hills {
+  position: absolute;
+  bottom: 0;
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  background-color: #1e1f29;
+  background-image: url("./images/bg-stars.svg");
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.container h1 {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.countdown div {
+  margin: 10px;
+}
+
+.countdown p {
+  padding: 20px;
+  background-color: var(--Dark-desaturated-blue);
+  color: var(--Soft-red);
+  font-size: 46px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.countdown h3 {
+  color: var(--Grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.socials {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 999;
+}
+
+.socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials ul li {
+  margin: 0 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: #3e50a3;
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: auto;
+    padding: 0 20px;
+  }
+  .container h1 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .start img, .hills img {
+    width: 1600px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .start img,
+  .hills img {
+    width: 1920px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
