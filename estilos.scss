@@ -27,7 +27,8 @@ ul{
     position: absolute;
 }
 .hills{ 
-    position: absolute;
+    z-index: 2;
+    position: fixed;
     bottom: 0;
 }
 
